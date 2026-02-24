@@ -1,0 +1,55 @@
+:root {
+    --nav-bg-color: #111032;
+}
+
+a {
+    text-decoration: none;
+}
+nav {
+    background-color: var(--nav-bg-color);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: 2em;
+}
+
+nav a {
+    color: white;
+}
+nav>ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+}
+nav>ul .logo {
+    display: flex;
+}
+nav>ul img {
+    height: 50px;
+    width: auto;
+    align-self: center;
+    padding-left: 2em;
+    margin-right: 1.5em;
+}
+nav li {
+    align-content: center;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 828px) {
+    nav>ul {
+        flex-direction: row;
+        gap: 1em;
+    }
+    nav>ul .first {
+        margin-right: auto;
+    }
+    nav li {
+        margin: .5em;
+    }
+}

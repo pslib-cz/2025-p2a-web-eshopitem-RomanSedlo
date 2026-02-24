@@ -1,0 +1,29 @@
+:root {
+    --wl-bg-color: #228b98;
+}
+
+.welcome {
+    display: flex;
+    background-color: var(--wl-bg-color);
+}
+.welcome--text {
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+.welcome--text h2 {
+    font-size: 28px;
+}
+.welcome--text p {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+@media (min-width: 828px) {
+    .welcome--text p {
+        padding-left: 16rem;
+        padding-right: 16rem;
+    }
+}

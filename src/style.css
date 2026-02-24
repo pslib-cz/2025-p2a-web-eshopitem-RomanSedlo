@@ -1,0 +1,73 @@
+@layer reset, navbar, welcome, main;
+
+@import url(reset.css) layer(reset);
+@import url(navbar.css) layer(navbar);
+@import url(welcome.css) layer(welcome);
+
+@layer main {
+    :root {
+        --sale-text-color: #e3342f;
+        --sale-bg-color: #f20d5d;
+        --new-bg-color: #3c00d4;
+    }
+
+    .eshop {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2em;
+    }
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+    .card a {
+        color: black;
+    }
+    .card__img {
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+    }
+    .card--cost {
+        display: flex;
+        gap: .5em;
+    }
+    .card--cost--sale {
+        text-decoration: line-through;
+    }
+    .card--cost--real {
+        font-weight: 700;
+        color: var(--sale-text-color);
+    }
+    .card--head {
+        position: relative;
+    }
+    .tag {
+        position: absolute;
+        color: white;
+    }
+    .tag--new {
+        background-color: var(--new-bg-color);
+        padding: 1.5em 1em;
+        border-radius: 50em;
+        right: -16px;
+        top: -16px;
+    }
+    .tag--sale {
+        background-color: var(--sale-bg-color);
+        padding: .5em;
+        bottom: 20px;
+    }
+    @media (min-width: 700px) {
+        .eshop {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (min-width: 1100px) {
+        .eshop {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 800px;
+        }
+    }
+}
