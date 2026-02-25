@@ -38,11 +38,11 @@ nav li {
 
 h1 {
     font-size: 24px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 10px;
 }
 
-@media (min-width: 828px) {
+@media (min-width: 700px) {
     nav>ul {
         flex-direction: row;
         gap: 1em;

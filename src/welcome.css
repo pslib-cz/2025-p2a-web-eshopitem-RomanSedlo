@@ -4,10 +4,10 @@
 
 .welcome {
     display: flex;
+    justify-content: center;
     background-color: var(--wl-bg-color);
 }
 .welcome--text {
-    align-self: center;
     text-align: center;
     color: white;
 }
