@@ -27,11 +27,12 @@
     .card__img {
         width: 300px;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
     }
     .card--cost {
         display: flex;
         gap: .5em;
+        font-weight: 400;
     }
     .card--cost--sale {
         text-decoration: line-through;
@@ -56,7 +57,7 @@
     }
     .tag--sale {
         background-color: var(--sale-bg-color);
-        padding: .5em;
+        padding: .5em 1em;
         bottom: 20px;
     }
     @media (min-width: 700px) {
