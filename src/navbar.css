@@ -7,9 +7,7 @@ a {
 }
 nav {
     background-color: var(--nav-bg-color);
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-right: 2em;
+    padding: .5em 2em .5em 1em;
 }
 
 nav a {
@@ -28,8 +26,7 @@ nav>ul img {
     height: 50px;
     width: auto;
     align-self: center;
-    padding-left: 2em;
-    margin-right: 1.5em;
+    margin-right: .5em;
 }
 nav li {
     align-content: center;
@@ -48,7 +45,7 @@ h1 {
         gap: 1em;
     }
     nav>ul .first {
-        margin-right: auto;
+        flex-grow: 1;
     }
     nav li {
         margin: .5em;
