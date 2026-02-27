@@ -14,21 +14,23 @@
     .eshop {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-rows: repeat(3, auto);
         gap: 2rem;
         max-width: 960px;
         margin: 2em auto 0 auto;
+        padding: 0 2em;
     }
     .card {
         display: grid;
-        /* grid-template-rows: subgrid; */
+        grid-template-rows: subgrid;
+        grid-row: span 3;
+        gap: .5em;
         color: black;
-        width: 100%;
     }
     .card:hover {
         transform: scale(1.02);
     }
-    .card--head {
+    .card__head {
+        position: relative;
         grid-row: 1;
     }
     .card__img {
@@ -37,27 +39,32 @@
         object-fit: contain;
         overflow: hidden;
     }
-    .card--main {
+    .card__main {
         grid-row: 2;
     }
-    .card--cost {
+    .card__cost {
         display: flex;
         grid-row: 3;
         gap: .5em;
         font-weight: 400;
     }
-    .card--cost--sale {
+    .card__cost--sale {
         text-decoration: line-through;
     }
-    .card--cost--real {
+    .card__cost--real {
         font-weight: 700;
         color: var(--sale-text-color);
     }
-    .card--head {
-        position: relative;
+    .tag__new {
+        position: absolute;
+        right: -1rem;
+        top: -1rem;
+    }
+    .tag__sale {
+        position: absolute;
+        bottom: 1rem;
     }
     .tag {
-        position: absolute;
         color: white;
         font-weight: 500;
     }
@@ -65,12 +72,10 @@
         background-color: var(--new-bg-color);
         padding: 1em .5em;
         border-radius: 50em;
-        right: -16px;
-        top: -16px;
+        max-width: fit-content;
     }
     .tag--sale {
         background-color: var(--sale-bg-color);
         padding: .5em 1em;
-        bottom: 20px;
     }
 }
