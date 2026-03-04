@@ -7,6 +7,7 @@
     <title>Kurzgesagt obchod</title>
     <link rel="icon" href="img/logo.gif" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/table.css">
 </head>
 
 <body>
@@ -76,6 +77,45 @@
                 <p class="card__cost--nosale">590 CZK</p>
             </div>
         </figure>
+    </div>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>I.</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>II.</th>
+                    <td colspan="2" id="type1">5</td>
+                    <td rowspan="2" id="type2">6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>III.</th>
+                    <td colspan="2" rowspan="2" id="type3">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <th>IV.</th>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 

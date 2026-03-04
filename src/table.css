@@ -1,0 +1,25 @@
+table,th,td {
+    border: 1px solid black;
+    min-width: 25px;
+    text-align: center;
+}
+table {
+    margin-left: 50em;
+    margin-top: 6em;
+    transform: scale(2);
+}
+th {
+    background-color: antiquewhite;
+}
+table:hover {
+    transform: scale(2.05);
+}
+tr #type1 {
+    background-color: rgb(232, 235, 94);
+}
+tr #type2 {
+    background-color: rgb(121, 196, 199);
+}
+tr #type3 {
+    background-color: rgb(219, 134, 201);
+}
