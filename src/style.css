@@ -26,6 +26,7 @@
         grid-row: span 3;
         gap: .5em;
         color: black;
+        margin-bottom: 1.5em;
     }
     .card:hover {
         transform: scale(1.02);
@@ -56,12 +57,12 @@
         font-weight: 700;
         color: var(--sale-text-color);
     }
-    .tag__new {
+    .tags__top {
         position: absolute;
         right: -1rem;
         top: -1rem;
     }
-    .tag__sale {
+    .tags__bottom {
         position: absolute;
         bottom: 1rem;
     }
